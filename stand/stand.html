@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>BMW 3D Model</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-asset-item
+        id="bmw"
+        src="bmw_m3_coupe_e30_1986/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="murcielago"
+        src="lamborghinimurcielago__lp-640-_low_poly/scene.gltf"
+      ></a-asset-item>
+
+      <a-sky src="sunny-sky.jpg"></a-sky>
+
+      <a-entity
+        gltf-model="#bmw"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#murcielago"
+        position="0 5 -10"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"
+      ></a-entity>
+
+      <a-light
+        type="directional"
+        position="0 10 0"
+        rotation="-90 10 0"
+        intensity="15"
+      ></a-light>
+
+      <a-camera position="0 1.5 10"></a-camera>
+    </a-scene>
+  </body>
+</html>
