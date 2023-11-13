@@ -1,4 +1,18 @@
 free models:
+
+glass wall:
+
+https://sketchfab.com/models/62fc7ec8ada04c3cbd355aad9ba85d78/embed
+
+Double doors:
+https://sketchfab.com/3d-models/double-glass-door-shc-quick-office-5645909ad1b34c71ac2f1313e36ff067
+
+Single door:
+https://sketchfab.com/3d-models/glass-door-shc-quick-office-a903b9594e17445da69ad94789c95afb
+
+Stairs:
+https://sketchfab.com/3d-models/glass-wall-105909288b874e38b62bd72246371166
+
 Minion:
 https://sketchfab.com/3d-models/realitycapture-toy-challenge-stuffed-bob-minion-5f8ded64ff8e48f9b725f3630b3b02d2
 
