@@ -10,8 +10,8 @@
   <body>
     <a-scene physics="debug: true">
       <a-asset-item
-        id="bmw"
-        src="models/bmw_m3_coupe_e30_1986/scene.gltf"
+        id="cars"
+        src="models/generic_passenger_car_pack/scene.gltf"
       ></a-asset-item>
 
       <a-asset-item
@@ -88,7 +88,7 @@
       </a-plane>
 
       <a-entity
-        gltf-model="#bmw"
+        gltf-model="#cars"
         animation="property: rotation; to: 0 360 0; loop: true; dur: 100000; easing: linear"
         scale="0.7 0.7 0.7"
         position="0 0.7"
@@ -102,6 +102,8 @@
         static-body
       >
       </a-entity>
+
+
 
       <a-entity
         id="player"
