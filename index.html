@@ -14,11 +14,7 @@
         src="models/generic_passenger_car_pack/scene.gltf"
       ></a-asset-item>
 
-      <a-asset-item
-        id="stairs"
-        src="models/glass_wall/scene.gltf"
-      ></a-asset-item>
-
+    
       <a-sky src="images/sunny-sky.jpg"></a-sky>
       <!-- front wall -->
       <a-box
@@ -91,18 +87,11 @@
         gltf-model="#cars"
         animation="property: rotation; to: 0 360 0; loop: true; dur: 100000; easing: linear"
         scale="0.7 0.7 0.7"
-        position="0 0.7"
+        position="0 0.7 -17.011"
         dynamic-body
       ></a-entity>
 
-      <a-entity
-        gltf-model="#stairs"
-        position="0 -0.1 -20"
-        rotation="0 90 0"
-        static-body
-      >
-      </a-entity>
-
+      
 
 
       <a-entity
