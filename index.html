@@ -13,14 +13,63 @@
         id="cars"
         src="models/generic_passenger_car_pack/scene.gltf"
       ></a-asset-item>
+
+      <a-asset-item
+        id="officechair"
+        src="models/office_chair/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="clientchair"
+        src="models/dublin_chair/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="desk"
+        src="models/office_desk/scene.gltf"
+      ></a-asset-item>
+
       <a-asset-item
         id="indianman"
         src="models/indian_man_in_suit/scene.gltf"
       ></a-asset-item>
+
       <a-asset-item
         id="outside"
         src="models/game_low_poly_buildings/scene.gltf"
       ></a-asset-item>
+
+      <a-asset-item
+        id="car1"
+        src="models/lamborghini_venevo/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="car2"
+        src="models/2014_-_porsche_918_spyder_rigged__mid-poly/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="car3"
+        src="models/ac_-_mclaren_p1_free/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="car4"
+        src="models/american_muscle_71_-_low_poly_model/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="car5"
+        src="models/bmw_m3_coupe_e30_1986/scene.gltf"
+      ></a-asset-item>
+
+      <a-asset-item
+        id="car6"
+        src="models/nissan_200sx_silvia_s14/scene.gltf"
+      ></a-asset-item>
+
+  
 
       <a-sky src="images/sunny-sky.jpg"></a-sky>
       <!-- front wall -->
@@ -96,17 +145,90 @@
       >
       </a-plane>
 
-      <a-entity
+      <!-- <a-entity
         gltf-model="#cars"
         scale="1.4 1.4 1.4"
         position="0 -0.023 -17.011"
         dynamic-body
       ></a-entity>
+    -->
+
+      <a-entity
+        gltf-model="#car1"
+        scale="0.5 0.5 0.5"
+        position="-13.762 0 -33"
+        rotation="0 45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car2"
+        scale="1.7 1.7 1.7"
+        position="-13.762 0 0"
+        rotation="0 45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car3"
+        scale="1.5 1.5 1.5"
+        position="-14 0 -17.4"
+        rotation="0 45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car4"
+        scale="1.5 1.5 1.5"
+        position="14 2 -33"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car5"
+        scale="1 1 1"
+        position="15.380 1.029 -17.4"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car6"
+        scale="2.2 2.2 2.2"
+        position="14 -1 -4"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
 
       <a-entity
         gltf-model="#indianman"
         position="0 -0.023 -17.011"
         scale="0.7 0.7 0.7"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#officechair"
+        position="0 0 -17.721"
+        scale="1.5 1.5 1.5"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#desk"
+        position="-1.028 0 -15.878"
+        scale="1.2 1.2 1.2"
+        rotation="0 -90 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#clientchair"
+        position="0 -0.016 -14"
+        scale="0.015 0.015 0.015"
+        rotation="0 -45 0" 
         dynamic-body
       ></a-entity>
 
