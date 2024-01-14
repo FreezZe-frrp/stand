@@ -4,482 +4,478 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
     <title>Car Stand</title>
   </head>
-  <body style="margin: 0px; overflow: hidden">
+  <body>
     <a-scene embedded arjs>
-      <a-marker preset="custom" type="pattern" url="pattern-marker.patt">
-        <a-asset-item
-          id="glassWindow"
-          src="models/glass_window/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="glassWindow"
+        src="models/glass_window/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item id="bush" src="models/bush/scene.gltf"></a-asset-item>
+      <a-asset-item id="bush" src="models/bush/scene.gltf"></a-asset-item>
 
-        <a-asset-item
-          id="tree"
-          src="models/trees_low_poly/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="tree"
+        src="models/trees_low_poly/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="grass"
-          src="models/green_field/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="grass"
+        src="models/green_field/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="road"
-          src="models/wet_intersection_-_american_road/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="road"
+        src="models/wet_intersection_-_american_road/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="building"
-          src="models/realistic_chicago_buildings/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="building"
+        src="models/realistic_chicago_buildings/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="officechair"
-          src="models/office_chair/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="officechair"
+        src="models/office_chair/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="clientchair"
-          src="models/dublin_chair/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="clientchair"
+        src="models/dublin_chair/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="desk"
-          src="models/office_desk/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="desk"
+        src="models/office_desk/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="businessMan"
-          src="models/business_man_standing/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="businessMan"
+        src="models/business_man_standing/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car1"
-          src="models/lamborghini_venevo/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car1"
+        src="models/lamborghini_venevo/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car2"
-          src="models/2014_-_porsche_918_spyder_rigged__mid-poly/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car2"
+        src="models/2014_-_porsche_918_spyder_rigged__mid-poly/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car3"
-          src="models/ac_-_mclaren_p1_free/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car3"
+        src="models/ac_-_mclaren_p1_free/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car4"
-          src="models/american_muscle_71_-_low_poly_model/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car4"
+        src="models/american_muscle_71_-_low_poly_model/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car5"
-          src="models/bmw_m3_coupe_e30_1986/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car5"
+        src="models/bmw_m3_coupe_e30_1986/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car6"
-          src="models/nissan_200sx_silvia_s14/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car6"
+        src="models/nissan_200sx_silvia_s14/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car7"
-          src="models/toyota_supra_a80_1993/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car7"
+        src="models/toyota_supra_a80_1993/scene.gltf"
+      ></a-asset-item>
 
-        <a-asset-item
-          id="car8"
-          src="models/1997_-_honda_civic_type-r__rigged/scene.gltf"
-        ></a-asset-item>
+      <a-asset-item
+        id="car8"
+        src="models/1997_-_honda_civic_type-r__rigged/scene.gltf"
+      ></a-asset-item>
 
-        <!-- Entrence -->
+      <!-- Entrence -->
 
+      <a-entity
+        gltf-model="#glassWindow"
+        scale="2 2 2"
+        position="-8.893 0 10.291"
+        rotation="0 -90 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#glassWindow"
+        scale="2 2 2"
+        position="-8.893 3.595 10.291"
+        rotation="0 -90 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#glassWindow"
+        scale="2 2 2"
+        position="9.246 0 10.291"
+        rotation="0 -90 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#glassWindow"
+        scale="2 2 2"
+        position="9.246 3.595 10.291"
+        rotation="0 -90 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-box
+        position="0.452 5.583 20.167"
+        depth="0.25"
+        height="3.8"
+        width="6.75"
+      >
+      </a-box>
+
+      <!-- left wall -->
+      <a-box
+        src="textures/parede.jpg"
+        repeat="30 10"
+        height="7.890"
+        width="35"
+        depth="0.5"
+        position="15.373 3.515 2.791"
+        rotation="0 90"
+        color="#FFFFFF"
+        static-body
+      >
+      </a-box>
+      <!-- right wall -->
+      <a-box
+        src="textures/parede.jpg"
+        repeat="30 10"
+        height="7.890"
+        width="35"
+        depth="0.5"
+        position="-14.497 3.515 2.791"
+        rotation="0 90"
+        color="#FFFFFF"
+        static-body
+      >
+      </a-box>
+
+      <!-- back wall -->
+      <a-box
+        src="textures/parede.jpg"
+        repeat="30 10"
+        height="7.890"
+        width="30.3"
+        depth="0.5"
+        position="0.425 3.461 -14.949 "
+        static-body
+      >
+      </a-box>
+
+      <!-- ceiling -->
+      <a-plane
+        src="textures/teto.jpg"
+        repeat="10 10"
+        height="40"
+        width="30.2"
+        position="0.452 7.490 4.840"
+        rotation="-90 0 0"
+        color="silver"
+        side="double"
+        static-body
+      >
+      </a-plane>
+
+      <!-- Floor -->
+      <a-plane
+        src="textures/chao.jpg"
+        repeat="10 10"
+        height="35.000"
+        width="30.2"
+        position="0.452 0.157 2.514"
+        rotation="-90 0 0"
+        color="silver"
+        static-body
+      >
+      </a-plane>
+
+      <!-- Outside -->
+
+      <a-sky src="images/sunny-sky.jpg"></a-sky>
+
+      <a-plane
+        src="textures/road.jpg"
+        repeat="10 10"
+        height="70"
+        width="80"
+        position="0.452 0.15 2.514"
+        rotation="-90 0 0"
+        color="silver"
+        static-body
+      >
+      </a-plane>
+
+      <a-entity
+        gltf-model="#bush"
+        position="-8.596 2.403 21.503"
+        scale="0.5 0.5 0.5"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#bush"
+        position="-8.596 2.403 23.690"
+        scale="0.5 0.5 0.5"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#bush"
+        position="9.601 2.403 21.503"
+        scale="0.5 0.5 0.5"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#bush"
+        position="9.601 2.403 23.690"
+        scale="0.5 0.5 0.5"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#tree"
+        position="-22.341 -0.299 42.764"
+        scale="0.025 0.025 0.025"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#tree"
+        position="22.5 -0.299 42.764"
+        scale="0.025 0.025 0.025"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#road"
+        position="0.955 -0.005 59.259"
+        scale="0.025 0.025 0.025"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#building"
+        position="-10.089 -1.191 66.222"
+        scale="0.125 0.125 0.125"
+        rotation="0 180 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#building"
+        position="-6.969 -1.191 88.775"
+        scale="0.125 0.125 0.125"
+        rotation="0 90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#building"
+        position="7 -1.191 69.391"
+        scale="0.125 0.125 0.125"
+        rotation="0 -90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#building"
+        position="29.572 -1.191 66.222"
+        scale="0.125 0.125 0.125"
+        rotation="0 180 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#building"
+        position="-32.727 -1.191 69.357"
+        scale="0.125 0.125 0.125"
+        rotation="0 -90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#grass"
+        position="-29.5 -0.053 45.371"
+        scale="1.1 1.1 1.1"
+        rotation="0 -90 0"
+        static-body
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#grass"
+        position="-13.685 -0.053 45.371"
+        scale="1.1 1.1 1.1 "
+        rotation="0 -90 0"
+        static-body
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#grass"
+        position="13.685 -0.053 45.371"
+        scale="1.1 1.1 1.1"
+        rotation="0 -90 0"
+        static-body
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#grass"
+        position="29.5 -0.053 45.371"
+        scale="1.1 1.1 1.1"
+        rotation="0 -90 0"
+        static-body
+      >
+      </a-entity>
+
+      <a-entity
+        gltf-model="#car7"
+        scale="0.5 0.5 0.5"
+        position="-5.210 0.128 25.720"
+        rotation="0 360 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car8"
+        scale="1.5 1.5 1.5"
+        position="5.5 0.128 25.720"
+        rotation="0 360 0"
+        dynamic-body
+      ></a-entity>
+
+      <!-- Inside -->
+
+      <a-entity
+        gltf-model="#car1"
+        scale="0.5 0.5 0.5"
+        position="-6.693 0.128 -7.827"
+        rotation="0 45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car2"
+        scale="1.7 1.7 1.7"
+        position="-8.893 0.128 13.5"
+        rotation="0 45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car3"
+        scale="1.5 1.5 1.5"
+        position="-8.1 0.128 3.149"
+        rotation="0 45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car4"
+        scale="1.5 1.5 1.5"
+        position="8.707 2.129 -7.717"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car5"
+        scale="1 1 1"
+        position="9.781 1.130 2.098"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#car6"
+        scale="2.2 2.2 2.2"
+        position="8.169 -0.9 9.799"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#businessMan"
+        position="0 1 -10"
+        scale="0.7 0.7 0.7"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#officechair"
+        position="1.4 0.172 -12"
+        scale="1.5 1.5 1.5"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#desk"
+        position="0 0.172 -9.959"
+        scale="1.2 1.2 1.2"
+        rotation="0 -90 0"
+        dynamic-body
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#clientchair"
+        position="0.5 0.172 -8.031"
+        scale="0.015 0.015 0.015"
+        rotation="0 -45 0"
+        dynamic-body
+      ></a-entity>
+
+      <!-- Player -->
+
+      <a-entity
+        id="player"
+        camera
+        look-controls
+        wasd-controls
+        position="0.185 2 71.317"
+        dynamic-body
+      >
         <a-entity
-          gltf-model="#glassWindow"
-          scale="2 2 2"
-          position="-8.893 0 10.291"
-          rotation="0 -90 0"
+          cursor="fuse: true; fuseTimeout: 1500"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: #CCC; shader: flat"
           dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#glassWindow"
-          scale="2 2 2"
-          position="-8.893 3.595 10.291"
-          rotation="0 -90 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#glassWindow"
-          scale="2 2 2"
-          position="9.246 0 10.291"
-          rotation="0 -90 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#glassWindow"
-          scale="2 2 2"
-          position="9.246 3.595 10.291"
-          rotation="0 -90 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-box
-          position="0.452 5.583 20.167"
-          depth="0.25"
-          height="3.8"
-          width="6.75"
-        >
-        </a-box>
-
-        <!-- left wall -->
-        <a-box
-          src="textures/parede.jpg"
-          repeat="30 10"
-          height="7.890"
-          width="35"
-          depth="0.5"
-          position="15.373 3.515 2.791"
-          rotation="0 90"
-          color="#FFFFFF"
-          static-body
-        >
-        </a-box>
-        <!-- right wall -->
-        <a-box
-          src="textures/parede.jpg"
-          repeat="30 10"
-          height="7.890"
-          width="35"
-          depth="0.5"
-          position="-14.497 3.515 2.791"
-          rotation="0 90"
-          color="#FFFFFF"
-          static-body
-        >
-        </a-box>
-
-        <!-- back wall -->
-        <a-box
-          src="textures/parede.jpg"
-          repeat="30 10"
-          height="7.890"
-          width="30.3"
-          depth="0.5"
-          position="0.425 3.461 -14.949 "
-          static-body
-        >
-        </a-box>
-
-        <!-- ceiling -->
-        <a-plane
-          src="textures/teto.jpg"
-          repeat="10 10"
-          height="40"
-          width="30.2"
-          position="0.452 7.490 4.840"
-          rotation="-90 0 0"
-          color="silver"
-          side="double"
-          static-body
-        >
-        </a-plane>
-
-        <!-- Floor -->
-        <a-plane
-          src="textures/chao.jpg"
-          repeat="10 10"
-          height="35.000"
-          width="30.2"
-          position="0.452 0.157 2.514"
-          rotation="-90 0 0"
-          color="silver"
-          static-body
-        >
-        </a-plane>
-
-        <!-- Outside -->
-
-        <a-sky src="images/sunny-sky.jpg"></a-sky>
-
-        <a-plane
-          src="textures/road.jpg"
-          repeat="10 10"
-          height="70"
-          width="80"
-          position="0.452 0.15 2.514"
-          rotation="-90 0 0"
-          color="silver"
-          static-body
-        >
-        </a-plane>
-
-        <a-entity
-          gltf-model="#bush"
-          position="-8.596 2.403 21.503"
-          scale="0.5 0.5 0.5"
-          rotation="0 90 0"
-          static-body
         >
         </a-entity>
-
-        <a-entity
-          gltf-model="#bush"
-          position="-8.596 2.403 23.690"
-          scale="0.5 0.5 0.5"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#bush"
-          position="9.601 2.403 21.503"
-          scale="0.5 0.5 0.5"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#bush"
-          position="9.601 2.403 23.690"
-          scale="0.5 0.5 0.5"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#tree"
-          position="-22.341 -0.299 42.764"
-          scale="0.025 0.025 0.025"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#tree"
-          position="22.5 -0.299 42.764"
-          scale="0.025 0.025 0.025"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#road"
-          position="0.955 -0.005 59.259"
-          scale="0.025 0.025 0.025"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#building"
-          position="-10.089 -1.191 66.222"
-          scale="0.125 0.125 0.125"
-          rotation="0 180 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#building"
-          position="-6.969 -1.191 88.775"
-          scale="0.125 0.125 0.125"
-          rotation="0 90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#building"
-          position="7 -1.191 69.391"
-          scale="0.125 0.125 0.125"
-          rotation="0 -90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#building"
-          position="29.572 -1.191 66.222"
-          scale="0.125 0.125 0.125"
-          rotation="0 180 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#building"
-          position="-32.727 -1.191 69.357"
-          scale="0.125 0.125 0.125"
-          rotation="0 -90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#grass"
-          position="-29.5 -0.053 45.371"
-          scale="1.1 1.1 1.1"
-          rotation="0 -90 0"
-          static-body
-        >
-        </a-entity>
-        <a-entity
-          gltf-model="#grass"
-          position="-13.685 -0.053 45.371"
-          scale="1.1 1.1 1.1 "
-          rotation="0 -90 0"
-          static-body
-        >
-        </a-entity>
-        <a-entity
-          gltf-model="#grass"
-          position="13.685 -0.053 45.371"
-          scale="1.1 1.1 1.1"
-          rotation="0 -90 0"
-          static-body
-        >
-        </a-entity>
-        <a-entity
-          gltf-model="#grass"
-          position="29.5 -0.053 45.371"
-          scale="1.1 1.1 1.1"
-          rotation="0 -90 0"
-          static-body
-        >
-        </a-entity>
-
-        <a-entity
-          gltf-model="#car7"
-          scale="0.5 0.5 0.5"
-          position="-5.210 0.128 25.720"
-          rotation="0 360 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#car8"
-          scale="1.5 1.5 1.5"
-          position="5.5 0.128 25.720"
-          rotation="0 360 0"
-          dynamic-body
-        ></a-entity>
-
-        <!-- Inside -->
-
-        <a-entity
-          gltf-model="#car1"
-          scale="0.5 0.5 0.5"
-          position="-6.693 0.128 -7.827"
-          rotation="0 45 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#car2"
-          scale="1.7 1.7 1.7"
-          position="-8.893 0.128 13.5"
-          rotation="0 45 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#car3"
-          scale="1.5 1.5 1.5"
-          position="-8.1 0.128 3.149"
-          rotation="0 45 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#car4"
-          scale="1.5 1.5 1.5"
-          position="8.707 2.129 -7.717"
-          rotation="0 -45 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#car5"
-          scale="1 1 1"
-          position="9.781 1.130 2.098"
-          rotation="0 -45 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#car6"
-          scale="2.2 2.2 2.2"
-          position="8.169 -0.9 9.799"
-          rotation="0 -45 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#businessMan"
-          position="0 1 -10"
-          scale="0.7 0.7 0.7"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#officechair"
-          position="1.4 0.172 -12"
-          scale="1.5 1.5 1.5"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#desk"
-          position="0 0.172 -9.959"
-          scale="1.2 1.2 1.2"
-          rotation="0 -90 0"
-          dynamic-body
-        ></a-entity>
-
-        <a-entity
-          gltf-model="#clientchair"
-          position="0.5 0.172 -8.031"
-          scale="0.015 0.015 0.015"
-          rotation="0 -45 0"
-          dynamic-body
-        ></a-entity>
-
-        <!-- Player -->
-
-        <a-entity
-          id="player"
-          camera
-          look-controls
-          wasd-controls
-          position="0.185 2 71.317"
-          dynamic-body
-        >
-          <a-entity
-            cursor="fuse: true; fuseTimeout: 1500"
-            position="0 0 -1"
-            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-            material="color: #CCC; shader: flat"
-            dynamic-body
-          >
-          </a-entity>
-        </a-entity>
-      </a-marker>
-      <a-entity gps-new-camera="gpsMinDistance: 5"></a-entity>
+      </a-entity>
     </a-scene>
   </body>
 </html>
